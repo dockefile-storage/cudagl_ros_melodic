@@ -1,0 +1,5 @@
+*.tgz
+.vscode
+.swap
+docker_dev_install
+
