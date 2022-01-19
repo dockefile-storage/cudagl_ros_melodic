@@ -57,7 +57,7 @@ apt-get install -y --allow-downgrades ros-melodic-can-msgs \
 
 apt-get install -y --allow-downgrades ros-melodic-rqt-reconfigure
 
-su - autoware -c "git config --global user.email \"you@example.com\""
-su - autoware -c "git config --global user.name you_name"
+su - docker -c "git config --global user.email \"you@example.com\""
+su - docker -c "git config --global user.name you_name"
 
 apt clean
