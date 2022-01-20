@@ -3,11 +3,11 @@
 ##############################
 
 su - docker -c "mkdir -p /home/docker/Autoware/src"
-su - docker -c "source /home/docker/.bash_aliases"
+su - docker -c "/bin/bash -c 'source /home/docker/.bash_aliases'"
 
 source /opt/ros/melodic/setup.bash && sudo rosdep init 
 
-su - docker -c "source /home/docker/.bash_aliases ;
+su - docker -c "/bin/bash  -c 'source /home/docker/.bash_aliases' ;
 rosdep update ;
 cd  /home/docker/Autoware; 
 vcs import src < /home/docker/shell/autoware.ai.repos; 
