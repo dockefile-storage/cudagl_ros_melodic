@@ -9,7 +9,7 @@ vcs import src < /home/docker/shell/autoware.ai.repos;
 "
 
 source /opt/ros/melodic/setup.bash && sudo rosdep init ; 
-su - docker -c "/bin/bash  -c '/opt/ros/melodic/setup.bash; rosdep update' " ;
+su - docker -c "/bin/bash  -c 'source /opt/ros/melodic/setup.bash; rosdep update' " ;
 
 cd  /home/docker/Autoware; 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO ;  
