@@ -11,6 +11,6 @@
 
 .. code-block:: sh
 
-    docker rmi   cudagl:ros-melodic
+    docker rmi   cudagl:autoware
 
-    docker build -t cudagl:ros-melodic .
+    docker build -t cudagl:autoware .

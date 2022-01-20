@@ -5,7 +5,7 @@
 mkdir  -p Autoware/src 
 cd  Autoware
 
-vcs import src < /home/docker/autoware.ai.repos
+vcs import src < /home/docker/shell/autoware.ai.repos
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 

@@ -6,7 +6,7 @@ LABEL Jiangxumin <cjiangxumin@gmail.com>
 USER docker
 
 COPY shell /home/docker/shell  
-RUN  bash  /home/docker/build.sh
+RUN  bash  /home/docker/shell/build.sh
 
 # WORKDIR /home/docker
 # CMD /bin/bash
